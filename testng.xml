@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name ="org.TestComponents.Listeners"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/vanit/IdeaProjects/SeleniumFramework1">
+        <classes>
+            <class name="org.Tests.ErrorValidation">
+                <methods>
+                    <include name="inValidLogin"/>
+                </methods>
+            </class>
+            <class name="org.Tests.StandAlone">
+                <methods>
+                    <include name="submitOrder"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
